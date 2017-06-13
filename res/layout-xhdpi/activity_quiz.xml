@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="bottom"
+    tools:context=".QuizActivity" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="295dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginTop="90dp"
+            android:text="Who is the First Prophet in Islam ?"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/radio0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:checked="true"
+                android:text="Hazrat Mohammad (P.B.U.H)"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RadioButton"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RadioButton"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+        <!-- <Button -->
+        <!-- android:id="@+id/button1" -->
+        <!-- android:layout_width="83dp" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_marginBottom="50dp" -->
+        <!-- android:layout_marginLeft="230dp" -->
+        <!-- android:text="Skip" /> -->
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/skip_quiz_button"
+        android:layout_width="145dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="425dp"
+        android:src="@drawable/skip_button" />
+
+    <ImageView
+        android:id="@+id/next_button"
+        android:layout_width="150dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="200dp"
+        android:layout_marginTop="425dp"
+        android:src="@drawable/next_button" />
+
+    <ImageView
+        android:id="@+id/close_btn_quiz"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="23dp"
+        android:src="@drawable/close" />
+    
+    <com.google.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+        android:id="@+id/adView_quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-2600713295339961/8105702934" />
+	
+</RelativeLayout>

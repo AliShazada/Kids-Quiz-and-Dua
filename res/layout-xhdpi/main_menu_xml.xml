@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_menu_backgeound"
+    android:gravity="center_vertical" >
+
+    <com.google.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-2600713295339961/8105702934" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="200dp"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/quiz_button"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_above="@+id/settings_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="48dp"
+            android:src="@drawable/quiz_button" />
+
+        <ImageView
+            android:id="@+id/dua_button"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginBottom="-10dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="-20dp"
+            android:src="@drawable/dua_button" />
+
+        <ImageView
+            android:id="@+id/settings_button"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="76dp"
+            android:src="@drawable/setting_button" />
+    </LinearLayout>
+
+</RelativeLayout>

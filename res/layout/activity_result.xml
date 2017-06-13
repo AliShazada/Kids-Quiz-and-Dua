@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mcq_result"
+    tools:context=".ResultActivity" >
+
+    <LinearLayout
+        android:id="@+id/Sublayout_quiz_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <RatingBar
+            android:id="@+id/ratingBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="38dp"
+            android:layout_marginRight="38dp"
+            android:layout_marginTop="310dp"
+            android:clickable="false"
+            android:numStars="5"
+            android:rating="0.0"
+            android:stepSize="1.0" />
+
+        <TextView
+            android:id="@+id/textResult"
+            android:layout_width="297dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_weight="0.02"
+            android:text="Large is very good Large is very good Large is very good"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#cc3636"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/continue_buton_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="95dp"
+            android:src="@drawable/continue_button" />
+
+    </LinearLayout>
+    <com.google.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+        android:id="@+id/adView_quiz_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"   
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-2600713295339961/8105702934" />
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/level_cleared"
+    android:orientation="vertical" xmlns:app="http://schemas.android.com/apk/lib/com.google.ads">
+
+    <ImageView
+        android:id="@+id/continue_buton_level_cleared"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="425dp"
+        android:src="@drawable/continue_button" />
+
+    <com.google.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+        android:id="@+id/adView_level_clear_duas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="495dp"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-2600713295339961/8105702934" >
+
+    </com.google.ads.AdView>
+
+</RelativeLayout>
